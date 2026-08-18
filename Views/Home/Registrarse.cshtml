@@ -33,6 +33,12 @@
             <input type="radio" name="TipoUsuario" value="Padre" class="auth-radio" /> Padre<br>
         </div>
         <p id="mensaje" class="auth-message">@ViewBag.Mensaje</p>
+        
+        <!-- Cloudflare Turnstile widget - site key proporcionada por el usuario -->
+        <div class="auth-form-group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAET63HM5pdMTLMTA"></div>
+        </div>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
         <button type="submit">Guardar</button>
         <button type="button" class="button-secondary" onclick="location.href='@Url.Action("Index", "Home")'">volver</button>

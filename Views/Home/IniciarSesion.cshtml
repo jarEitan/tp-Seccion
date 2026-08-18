@@ -15,9 +15,20 @@
             <input id="contrasena" type="password" name="Contraseña" class="auth-input" />
         </div>
         <p id="mensaje" class="auth-message">@ViewBag.Mensaje</p>
+
+        <!-- Cloudflare Turnstile widget - site key proporcionada por el usuario -->
+        <div class="auth-form-group">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAET63HM5pdMTLMTA"></div>
+        </div>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
         <button type="submit">iniciar sesión</button>
         
     </form>
+    <div class="regist">
+    <h1>¿No tienes cuenta?</h1>
+    <button type="button" onclick="location.href='@Url.Action("Registrarse", "Home")'">Registrarse</button>
+    </div>
     <button type="button" class="button-secondary" onclick="location.href='@Url.Action("Index", "Home")'">volver</button>
 </section>
 

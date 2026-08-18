@@ -475,3 +475,15 @@ header {
   }
 }
 
+.regist{
+  margin: 1%;
+  margin-top: 5%;
+  padding: 1%;
+  border: 1px, solid, #1f293733;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.28);
+}
+.regist h1{
+  font-size: 170%;
+  margin: 0%;
+}
